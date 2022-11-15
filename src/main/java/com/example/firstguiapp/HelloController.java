@@ -1,7 +1,10 @@
 package com.example.firstguiapp;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,6 +16,8 @@ public class HelloController {
     String warningMessage="";
     @FXML
     private Button loginButton;
+    @FXML
+    private  Button regButton;
     @FXML
     private Label welcomeText;
 @FXML
@@ -33,6 +38,9 @@ private TextField loginText;
             warningMessage="Access denied !";
 
         }
+
+        //https://github.com/sdjuraev/CS211LABWEEK74.git
+
         boolean status=false;
         File file=new File("logins.txt");
         if (file.exists()) {
@@ -56,4 +64,16 @@ private TextField loginText;
             file.createNewFile();
         }
     }
+    @FXML
+    private void showRegWindow() throws IOException {
+        Stage stage=new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("registrationform.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.setTitle("Registration form");
+        stage.setAlwaysOnTop(true);
+        stage.show();
+
+    }
+
 }
