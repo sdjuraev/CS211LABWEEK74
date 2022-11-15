@@ -23,6 +23,7 @@ public class Registrationform {
         Scanner scanner=new Scanner(file);
         while (scanner.hasNext()){
             while (scanner.hasNext()) {
+
                 String[] loginpassword=scanner.nextLine().split(" ");
                 if (loginpassword[0].equals(regID.getText())){
                     System.out.println("This login is not available!");
