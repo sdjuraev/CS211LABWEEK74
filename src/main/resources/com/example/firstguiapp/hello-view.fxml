@@ -18,5 +18,5 @@
    <Button fx:id="loginButton" onAction="#loginSystem" layoutX="10.0" layoutY="300.0" mnemonicParsing="false" prefWidth="60" text="Login" />
     <Button layoutX="80.0" layoutY="300.0" onAction="#onHelloButtonClick" prefWidth="60" text="Reset" />
    <Button fx:id="regButton" onAction="#showRegWindow" layoutX="150.0" layoutY="300.0" mnemonicParsing="false" prefWidth="60" text="Register" />
-    <Button fx:id="" layoutX="220" layoutY="300" mnemonicParsing="false" prefWidth="60" text="Cancel" />
+    <Button fx:id="cancelButton" layoutX="220" layoutY="300" mnemonicParsing="false" prefWidth="60" text="Cancel" />
 </Pane>
