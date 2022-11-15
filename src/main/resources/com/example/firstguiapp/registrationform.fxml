@@ -6,12 +6,12 @@
 
 <Pane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstguiapp.Registrationform">
    <children>
-      <Button layoutX="70.0" layoutY="300.0" prefWidth="90" mnemonicParsing="false" text="Register" />
+      <Button onAction="#setRegButton" layoutX="70.0" layoutY="300.0" prefWidth="90" mnemonicParsing="false" text="Register" />
       <Button layoutX="240.0" layoutY="300.0" prefWidth="90" mnemonicParsing="false" text="Cancel" />
       <Label layoutX="54.0" layoutY="65.0" text="Login" />
       <Label layoutX="54.0" layoutY="94.0" text="Password" />
       <Label layoutX="54.0" layoutY="136.0" text="Repeat password" />
-      <TextField layoutX="127.0" layoutY="61.0" promptText="Enter new ID"/>
+      <TextField fx:id="regID" layoutX="127.0" layoutY="61.0" promptText="Enter new ID"/>
       <DatePicker layoutX="120.0" layoutY="179.0" />
       <PasswordField layoutX="127.0" layoutY="99.0" />
       <PasswordField layoutX="127.0" layoutY="141.0" />
